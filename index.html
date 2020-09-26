@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cat Tree!</title>
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="./css.css" />
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">   
+
+</head>
+
+
+
+
+<body>
+
+<header id="header">
+    <div id="img-nav-container"> <!-- behind maincontent bg and border -->
+        <img id="header-img" src="./images/catlogo.png" /> <!--in front -->
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#catTree" class="nav-link">one</a></li>
+                <li><a href="#catEmail" class="nav-link">two</a></li>
+                <li><a href="#catComments" class="nav-link">three</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div id = "mainContent">
+    <h1 id="catTree">The Cat Tree</h1>
+    <video id="video" controls>
+        <source src="./images/catpole.MOV" type="video/mp4" />
+        Your browser does not support HTML video.
+    </video>
+
+    <hr />
+    <h2 id="catEmail">Subscribe to Our Mailing List</h2>
+    <div class="contentContainer">
+        <p>Send us your email address by filling out this field to receive product notifications.</p>
+        <form id="form" method="POST" action="https://www.freecodecamp.com/email-submit">
+            <input id="email" type="email" name="userEmail" placeholder="email" required/>
+            <input id="submit" type="submit" />
+        </form>
+    </div>
+    <hr />
+        <h2 id="catComments">Cat Comments</h2>
+
+        <div class="contentContainer">
+        <p>We'd love to hear from you and your pets.  Drop us a comment below.</p>
+        <label for="userComments"></label>
+        <textarea id="userComments" name="userComments">The cake is a lie.  So is the comment submit button.</textarea>
+    </div>
+</div>
+
+</body>
+</html>
